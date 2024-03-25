@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NeoflexApplication {
+public class VacationPayCalculatorApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(NeoflexApplication.class, args);
+		SpringApplication.run(VacationPayCalculatorApplication.class, args);
 	}
 
 }

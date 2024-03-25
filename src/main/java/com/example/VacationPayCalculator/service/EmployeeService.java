@@ -1,7 +1,7 @@
 package com.example.VacationPayCalculator.service;
 
-import com.example.VacationPayCalculator.entity.Employee;
+import com.example.VacationPayCalculator.dto.EmployeeDto;
 
 public interface EmployeeService {
-    public Employee amount(Employee employee);
+    public EmployeeDto amount(EmployeeDto employeeDto);
 }

@@ -1,4 +1,4 @@
-package com.example.VacationPayCalculator.entity;
+package com.example.VacationPayCalculator.dto;
 
 import lombok.*;
 
