@@ -8,6 +8,7 @@ class VacationPayCalculatorApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

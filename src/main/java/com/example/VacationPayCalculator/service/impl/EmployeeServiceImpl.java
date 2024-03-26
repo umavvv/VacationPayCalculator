@@ -9,13 +9,14 @@ import org.springframework.stereotype.Service;
 public class EmployeeServiceImpl implements EmployeeService {
     int daysVacation = 28;
     double averageNumberOfDaysInMonth = 29.3;
-    public EmployeeDto amount(EmployeeDto employeeDto) {
+    public String amount(EmployeeDto employeeDto) {
         if (employeeDto.getSalary() > 0) {
             double sum = employeeDto.getSalary() / averageNumberOfDaysInMonth * daysVacation;
+            double salaryPerDay = sum / 28;
+            double finalSalary = salaryPerDay * employeeDto.getVacationDays();
 
-            return EmployeeDto.builder()
-                    .salary(sum)
-                    .build();
+            String vacationDaysConvert= String.valueOf(finalSalary);
+            return vacationDaysConvert ;
 
         } else {
             throw new NotEnoughSalaryException("Отрицательный запрос на расчет отпускных");
